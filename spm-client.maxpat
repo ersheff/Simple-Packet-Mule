@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 177.0, 256.0, 166.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "<- receive on other computer",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -113,7 +126,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 320.0, 171.0, 400.0, 220.0 ],
+					"patching_rect" : [ 346.0, 171.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -125,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 156.0, 132.0, 183.0, 22.0 ],
+					"patching_rect" : [ 156.0, 132.0, 209.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
@@ -134,7 +147,7 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script client.js @autostart 1"
+					"text" : "node.script spm-client.js @autostart 1"
 				}
 
 			}
@@ -190,6 +203,13 @@
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spm-client.js",
+				"bootpath" : "~/GitHub/Simple-Packet-Mule",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
