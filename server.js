@@ -17,7 +17,7 @@ io.on("connection", socket => {
     console.log("A user connected.");
 
     socket.on("data", incoming => {
-        socket.broadcast.emit("data", incoming);
+        io.emit("data", incoming);
     });
 
 });
